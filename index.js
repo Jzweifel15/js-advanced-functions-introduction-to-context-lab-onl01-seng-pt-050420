@@ -79,7 +79,14 @@ function allWagesFor(employeeRecord)
   return total;
 }
 
-function calculatePayroll()
+function calculatePayroll(arrayOfRecords)
 {
-  
+  let total = 0;
+  for (let i = 0; i < arrayOfRecords.length; i++)
+  {
+    let allWagesForRecord = allWagesFor(arrayOfRecrds[i]);
+    
+    total = total + allWagesForRecord;
+  }
+  return total;
 }
