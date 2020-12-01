@@ -51,9 +51,9 @@ function hoursWorkedOnDate(employeeRecord, dateStamp)
   let timeIn = dateIn.hour;
   let timeOut = dateOut.hour;
   
-  let hoursWorked = 
+  let hoursWorked = (timeOut / 100) - (timeIn / 100);
   
-  return (timeOut / 100) - (timeIn / 100);
+  return return hoursWorked;
 }
 
 function wagesEarnedOnDate(employeeRecord, dateStamp)
