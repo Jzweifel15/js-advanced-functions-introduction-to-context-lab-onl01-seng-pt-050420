@@ -68,5 +68,13 @@ function wagesEarnedOnDate(employeeRecord, dateStamp)
 
 function allWagesFor(employeeRecord)
 {
-  
+  let total = 0;
+  for (let i = 0; i < employeeRecord.timeInEvents.length; i++)
+  {
+    let dateStamp = employeeRecord.timeInEvents[i].date;
+    let wagesEarned = wagesEarnedOnDate(employeeRecord, dateStamp);
+    
+    total = total + wagesEarned;
+  }
+  return total;
 }
