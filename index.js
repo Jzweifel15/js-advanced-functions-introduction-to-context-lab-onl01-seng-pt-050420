@@ -66,7 +66,7 @@ function wagesEarnedOnDate(employeeRecord, dateStamp)
   return wagesEarned;
 }
 
-function allWagesFor()
+function allWagesFor(employeeRecord)
 {
   
 }
