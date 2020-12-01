@@ -78,3 +78,8 @@ function allWagesFor(employeeRecord)
   }
   return total;
 }
+
+function calculatePayroll()
+{
+  
+}
