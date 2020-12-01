@@ -54,3 +54,7 @@ function hoursWorkedOnDate(employeeRecord, dateStamp)
   return (timeOut / 100) - (timeIn / 100);
 }
 
+function wagesEarnedOnDate()
+{
+  
+}
