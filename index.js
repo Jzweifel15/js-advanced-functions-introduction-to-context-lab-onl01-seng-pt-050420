@@ -45,7 +45,9 @@ function createTimeOutEvent(employeeRecord, dateStamp)
 
 function hoursWorkedOnDate(employeeRecord, dateStamp)
 {
-  let timeIn = employeeRecord.timeInEvents.find(in => in.date === dateStamp);
+  let dateIn = employeeRecord.timeInEvents.find(x => x.date === dateStamp);
+  let dateOut = employeeRecord.timeOutEvents.find(x => x.date === dateStamp);
+  
   
 }
 
