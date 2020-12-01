@@ -90,3 +90,8 @@ function calculatePayroll(arrayOfRecords)
   }
   return total;
 }
+
+function findEmployeeByFirstName()
+{
+  
+}
