@@ -61,5 +61,7 @@ function wagesEarnedOnDate(employeeRecord, dateStamp)
   let hoursWorked = hoursWorkedOnDate(employeeRecord, dateStamp);
   let payRate = employeeRecord.payPerHour;
   
-  return 
+  let wagesEarned = hoursWorked * payRate;
+  
+  return wagesEarned;
 }
