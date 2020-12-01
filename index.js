@@ -25,14 +25,20 @@ function createTimeInEvent(employeeRecord, dateStamp)
 {
   let timeInEvent = {
     "type": "TimeIn",
-    "hour": dateStamp.substring(11, 15),
+    "hour": parseInt(dateStamp.substring(11, 15), 10),
     "date": dateStamp.substring(0, 10)
   };
   employeeRecord.timeInEvents.push(timeInEvent);
   return employeeRecord;
 }
 
-function createTimeOutEvent()
+function createTimeOutEvent(employeeRecord, dateStamp)
 {
-  
+  let timeOutEvent = {
+    "type": "TimeOut",
+    "hour": parseInt(dateStamp.substring(11, 15), 10),
+    "date": dateStamp.substring(0, 10)
+  };
+  employeeRecord.timeOutEvents.push(timeOutEvent);
+  return employeeRecord;
 }
