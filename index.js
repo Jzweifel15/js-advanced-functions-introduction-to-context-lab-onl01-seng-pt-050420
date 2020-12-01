@@ -91,7 +91,8 @@ function calculatePayroll(arrayOfRecords)
   return total;
 }
 
-function findEmployeeByFirstName()
+function findEmployeeByFirstName(srcArray, firstName)
 {
-  
+  let match = srcArray.find(record => record.firstName === firstName);
+  return match;
 }
