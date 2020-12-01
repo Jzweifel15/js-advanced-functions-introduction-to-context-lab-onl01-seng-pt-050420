@@ -42,3 +42,6 @@ function createTimeOutEvent(employeeRecord, dateStamp)
   employeeRecord.timeOutEvents.push(timeOutEvent);
   return employeeRecord;
 }
+
+
+
