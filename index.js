@@ -48,7 +48,9 @@ function hoursWorkedOnDate(employeeRecord, dateStamp)
   let dateIn = employeeRecord.timeInEvents.find(x => x.date === dateStamp);
   let dateOut = employeeRecord.timeOutEvents.find(x => x.date === dateStamp);
   
-  let timeIn = dateIn.hour;
-  let timeOut = dateOut.hour;
+  let timeIn = dateIn.hour % 12;
+  let timeOut = dateOut.hour % 12;
+  
+  
 }
 
