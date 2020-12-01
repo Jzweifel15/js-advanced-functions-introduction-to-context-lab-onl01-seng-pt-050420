@@ -43,5 +43,10 @@ function createTimeOutEvent(employeeRecord, dateStamp)
   return employeeRecord;
 }
 
-
+function hoursWorkedOnDate(employeeRecord, dateStamp)
+{
+  let date = dateStamp.substring(0, 10);
+  
+  
+}
 
