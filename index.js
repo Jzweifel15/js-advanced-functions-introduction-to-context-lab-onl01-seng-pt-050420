@@ -84,7 +84,7 @@ function calculatePayroll(arrayOfRecords)
   let total = 0;
   for (let i = 0; i < arrayOfRecords.length; i++)
   {
-    let allWagesForRecord = allWagesFor(arrayOfRecrds[i]);
+    let allWagesForRecord = allWagesFor(arrayOfRecords[i]);
     
     total = total + allWagesForRecord;
   }
